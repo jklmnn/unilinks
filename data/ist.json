@@ -62,14 +62,6 @@
         "name":"netAction",
         "url":"http://et.netaction.de/forum/index.php"
       },
-      {
-        "name":"Cloud",
-        "url":"https://cloud.ketograph.de/index.php/s/CaNycdAUG7P5Hzp"
-      },
-	  {
-        "name":"Zugangssystem Doorlock (VPN)",
-        "url":"https://etdlxj.et.tu-dresden.de:8445/doorlock/main.php"
-      },
 	  {
         "name":"Universitätssport",
         "url":"https://tu-dresden.de/usz"
