@@ -84,10 +84,6 @@
         "url":"http://www.math.tu-dresden.de/~baumann/algebra_fuer_informationssystemtechniker.html"
       },
       {
-        "name":"Algebra Übung",
-        "url":"https://www.math.tu-dresden.de/~jgreiner/AlgIST_WS16.html"
-      },
-      {
         "name":"Algorithmen und Datenstrukturen",
         "url":"https://www.inf.tu-dresden.de/index.php?node_id=3749&ln=de"
       },
@@ -226,7 +222,7 @@
       },
       {
         "name":"Datenbanken",
-        "url":"https://wwwdb.inf.tu-dresden.de/study/teaching/ss_17/datenbanken-grundlagen/"
+        "url":"https://wwwdb.inf.tu-dresden.de/study/teaching/summer-term-2018/datenbanken-grundlagen/"
       },
       {
         "name":"Informationstheorie",
