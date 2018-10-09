@@ -83,8 +83,9 @@ class JsonValidate(unittest.TestCase):
 
         @ddt.data(*load_links(load_files()))
         def test_links(self, entry):
-                response = requests.head(entry["url"], verify=False)
-                self.assertTrue(response,
-                        "Test failed for\nSite: {0} \nURL: {1}\nStatus: {2}".format(
-                            entry["name"], entry["url"], response.status_code))
+                if entry["url"]:
+                        response = requests.head(entry["url"], verify=False)
+                        self.assertTrue(response,
+                                "Test failed for\nSite: {0} \nURL: {1}\nStatus: {2}".format(
+                                    entry["name"], entry["url"], response.status_code))
 
