@@ -2,7 +2,7 @@
 
 import unittest
 import json
-import requests
+import validators
 import ddt
 from jsonschema import validate
 
@@ -84,8 +84,8 @@ class JsonValidate(unittest.TestCase):
         @ddt.data(*load_links(load_files()))
         def test_links(self, entry):
                 if entry["url"]:
-                        response = requests.head(entry["url"], verify=False)
-                        self.assertTrue(response,
-                                "Test failed for\nSite: {0} \nURL: {1}\nStatus: {2}".format(
-                                    entry["name"], entry["url"], response.status_code))
+                        status = validators.url(entry["url"])
+                        self.assertTrue(status == True,
+                                "Test failed for\nSite: {0} \nURL: {1}\nResult: {2}".format(
+                                    entry["name"], entry["url"], "True" if status else status.value))
 
